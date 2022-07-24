@@ -64,5 +64,38 @@
 
 .i-right>:nth-child(1){
   transform: scale(0.69);
-  left: -15%;    
+  left: -15%;
+  top: -9%;    
 }
+.i-right>:nth-child(2){
+    top: -4.6rem;
+    transform: scale(0.67);
+    left: -3rem;
+}
+.i-right>:nth-child(3){
+    transform: scale(1.4);
+    left: 28%;
+}
+.i-right>:nth-child(4){
+    transform: scale(0.6);
+    left: -24%;
+    top: -19%;
+    border-radius:50% ;
+    padding: 0;
+}
+
+.blur{
+    position:absolute;
+    width: 22rem;
+    height:14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(72px);
+    z-index: -9;
+    top: -18%;
+    left:56%;
+
+}
+
+
+
