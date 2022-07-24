@@ -22,7 +22,7 @@
     font-size: 3rem;
 }
 .i-name>:nth-child(2){
-    color:var(--orange);
+    color:var(--blue);
     font-weight: bold;
     font-size: 3rem;
 }
@@ -36,4 +36,33 @@
 .i-button{
     width:6rem;
     height: 2rem;
+}
+
+.i-icons{
+    margin-top : 3rem ;
+    display: flex;
+    gap: 0rem;
+}
+
+.i-icons>*{
+  transform: scale(0.5);
+}
+
+.i-icons>*:hover{
+    cursor: pointer;
+    transform: scale(.65);
+}
+
+.i-right{
+    flex: 1;
+    position: relative;
+}
+.i-right>*{
+    position: absolute;
+    z-index: -1;
+}
+
+.i-right>:nth-child(1){
+  transform: scale(0.69);
+  left: -15%;    
 }
