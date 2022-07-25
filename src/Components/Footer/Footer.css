@@ -17,3 +17,8 @@
     gap: 4rem;
     color: white;
 }
+@media screen and (max-width: 480px){
+    .f-content{
+      transform: scale(.5);
+    }
+  }
