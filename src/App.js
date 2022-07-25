@@ -6,9 +6,11 @@ import Experience from "./Components/Experience/Experience";
 import Works from "./Components/Works/Works";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 
 
 function App() {
+ 
   return (
     <div className="App">
      <Navbar/>
@@ -18,6 +20,7 @@ function App() {
      <Works/>
      <Portfolio/>
      <Contact/>
+     <Footer/>
     </div>
   );
 }

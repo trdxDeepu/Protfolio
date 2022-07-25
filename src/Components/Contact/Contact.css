@@ -38,7 +38,7 @@ textarea{
 
 
 /* CSS */
-.s-button{
+.s5-button{
   align-items: center;
   appearance: none;
   background-color: var(--orange);
@@ -57,6 +57,7 @@ textarea{
   overflow: hidden;
   padding-left: 16px;
   padding-right: 16px;
+  width: 6rem;
   position: relative;
   text-align: left;
   text-decoration: none;
@@ -69,16 +70,29 @@ textarea{
   font-size: 18px;
 }
 
-.s-button:focus {
+.s5-button:focus {
   box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
-.s-button:hover {
+.s5-button:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--orange) 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
-.s-button:active {
+.s5-button:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 }
+
+@media screen and (max-width: 480px) {
+  .contact-form{
+      padding: 0;
+      flex-direction: column;
+      gap: 5rem;
+      height: 40rem;
+  }
+  .c-right .user{
+      width: 16rem;
+  }
+
+}   

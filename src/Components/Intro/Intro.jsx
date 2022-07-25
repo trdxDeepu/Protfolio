@@ -10,13 +10,16 @@ import Thumbsup from "../../img/thumbup.png";
 import Crown from "../../img/crown.png";
 import Glassesimoji from "../../img/glassesimoji.png";
 import Floatingdiv from "./Floatingdiv";
+import { motion } from "framer-motion"
+import {Link} from "react-scroll";
+const Intro=()=> {
+  const transition = {duration:2,type:'spring'}
 
-function Intro() {
   return (
-    <div className="intro">
+    <div className="intro" >
       <div className="i-left">
         <div className="i-name">
-          <span>Hy! I Am </span>
+          <span >Hy! I Am </span>
           <span>Deependra Singh</span>
           <span>
             A 4th year engineering undergrad oriented towards developing best
@@ -25,7 +28,9 @@ function Intro() {
             the field of software development.
           </span>
         </div>
-        <button className="i-button button">Hire Me</button>
+        <Link to="contact" spy={true} smooth={true}>
+        <button className="button n-button">Hire Me</button>
+        </Link>
         <div className="i-icons">
           <a href="https://github.com/trdxlucifer" target="_blank">
             <img src={Github} alt="" />
@@ -49,17 +54,33 @@ function Intro() {
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
         <img src={Boy} alt="" />
-        <img src={Glassesimoji} alt="" />
-        <div style={{ top: "-4%", left: "58%" }}>
+        <motion.img 
+       initial={{ left: "-36%" }}
+       whileInView={{ left: "-24%" }}
+       transition={transition}
+        src={Glassesimoji} alt="" />
+        <motion.div
+         initial={{ top: "-4%", left: "74%" }}
+         whileInView={{ left: "68%" }}
+         transition={transition}
+
+        style={{ top: "-4%", left: "58%" }}
+        className='floating-div'>
+
           <Floatingdiv image={Crown} txt1="Front-end" txt2="Developer" />
-        </div>
-        <div style={{ top: "18rem", left: "0rem" }}>
+        </motion.div>
+        <motion.div 
+       initial={{ left: "9rem", top: "18rem" }}
+       whileInView={{ left: "0rem" }}
+       transition={transition}
+        style={{ top: "18rem", left: "0rem" }}
+        className='floating-div'>
           <Floatingdiv
             image={Thumbsup}
             txt1="Easy Understand"
             txt2="Can do easily"
           />
-        </div>
+        </motion.div>
         <div className="blur" style={{ background: "rgb(238,210,255)" }}></div>
         <div
           className="blur"
